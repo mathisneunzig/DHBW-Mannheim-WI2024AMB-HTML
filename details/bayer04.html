@@ -2,42 +2,61 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bayer 04 Leverkusen</title>
     <link rel="stylesheet" href="bayer04.css">
 </head>
 <body>
-    <div class="container">
-        <header>
+    <div class="page-container">
+        <header class="club-header">
+            <p class="club-kicker">Bundesliga - Vereinsprofil</p>
             <h1>Bayer 04 Leverkusen</h1>
-            <img src="https://upload.wikimedia.org/wikipedia/de/thumb/f/f7/Bayer_Leverkusen_Logo.svg/1024px-Bayer_Leverkusen_Logo.svg.png" alt="Bayer 04 Leverkusen Logo" class="club-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/de/f/f7/Bayer_Leverkusen_Logo.svg" alt="Vereinslogo von Bayer 04 Leverkusen" class="club-logo" referrerpolicy="no-referrer">
         </header>
 
-        <section class="club-info">
-            <h2>Vereinsprofil</h2>
-            <ul>
-                <li><strong>Trainer:</strong> Xabi Alonso</li>
-                <li>
-                    <strong>Trainerfoto:</strong><br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Xabi_Alonso_Training_2017-03_FC_Bayern_Muenchen-3_%28cropped%29.jpg/800px-Xabi_Alonso_Training_2017-03_FC_Bayern_Muenchen-3_%28cropped%29.jpg" alt="Xabi Alonso" class="trainer-pic">
-                </li>
-                <li><strong>Stadt:</strong> Leverkusen</li>
-                <li><strong>Stadion:</strong> BayArena</li>
-                <li>
-                    <strong>Stadionfoto:</strong><br>
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipOC9W5imSWVeNMmHcHDcJOtlDkvyLSJdcNO1BgQ=s1360-w1360-h1020" alt="BayArena" class="stadion-pic">
-                </li>
-                <li><strong>Kapazität:</strong> 30.210 Zuschauer</li>
-            </ul>
-        </section>
+        <main>
+            <section class="info-card" aria-labelledby="profil-title">
+                <h2 id="profil-title">Vereinsprofil</h2>
+                <dl class="club-facts">
+                    <div>
+                        <dt>Trainer</dt>
+                        <dd>Kasper Hjulmand</dd>
+                    </div>
+                    <div>
+                        <dt>Stadt</dt>
+                        <dd>Leverkusen</dd>
+                    </div>
+                    <div>
+                        <dt>Stadion</dt>
+                        <dd>BayArena</dd>
+                    </div>
+                    <div>
+                        <dt>Kapazitat</dt>
+                        <dd>30.210 Zuschauer</dd>
+                    </div>
+                </dl>
+            </section>
 
-        <section class="club-links">
-            <h2>Offizielle Kanäle</h2>
-            <p>Besuche die offizielle Webseite für Neuigkeiten, Spielpläne und mehr:</p>
-            <a href="https://bayer04.de" target="_blank" class="official-link">🌐 bayer04.de</a>
-        </section>
+            <section class="media-grid" aria-label="Bilder von Trainer und Stadion">
+                <article class="media-card">
+                    <h2>Trainer</h2>
+                    <img src="https://b04-ep-media-prod.azureedge.net/pickerimages/Hjulmand_S2526_2993h_813663_XL.png" alt="Trainer Kasper Hjulmand" class="media-image" referrerpolicy="no-referrer">
+                </article>
+                <article class="media-card">
+                    <h2>Stadion</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Bayarena_Leverkusen_2020.jpg" alt="Die BayArena in Leverkusen" class="media-image" referrerpolicy="no-referrer">
+                </article>
+            </section>
 
-        <footer>
-            <a href="../index.html" class="back-link">🔙 Zurück zur Tabelle</a>
+            <section class="info-card" aria-labelledby="links-title">
+                <h2 id="links-title">Offizielle Kanale</h2>
+                <p>Aktuelle Infos: Stand 20.03.2026, Quelle offizielle Teamseite.</p>
+                <a href="https://www.bayer04.de/de-de/team/werkself/bayer-04-leverkusen" target="_blank" rel="noopener noreferrer" class="official-link">Zur offiziellen Teamseite</a>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <a href="../index.html" class="back-link">Zuruck zur Tabelle</a>
         </footer>
     </div>
 </body>

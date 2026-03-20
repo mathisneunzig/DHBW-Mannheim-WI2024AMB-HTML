@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.hero {
+    position: relative;
+    background: linear-gradient(135deg, #f7d117, #111);
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0 #f7d117;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.card {
+    background: #1b1b1b;
+    border-left: 8px solid #f7d117;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.card h2 {
+    color: #f7d117;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.info-box {
+    background: #2a2a2a;
+    border: 2px solid #f7d117;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.info-box h3 {
+    color: #f7d117;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.info-box p,
+.info-box a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.info-box a:hover {
+    color: #f7d117;
+    text-decoration: underline;
+}
+
+.trainer-photo-box {
+    text-align: center;
+}
+
+.trainer-photo {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #f7d117;
+    margin-top: 10px;
+}
+
+.funfacts ul {
+    list-style: none;
+}
+
+.funfacts li {
+    background: #2a2a2a;
+    margin-bottom: 12px;
+    padding: 14px 16px;
+    border-left: 5px solid #f7d117;
+    border-radius: 8px;
+}
+
+.button-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-btn {
+    background: #f7d117;
+    color: #000;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.back-btn:hover {
+    background: #000;
+    color: #f7d117;
+    border: 2px solid #f7d117;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #f7d117;
+    margin-top: 40px;
+    font-size: 0.95rem;
+}
